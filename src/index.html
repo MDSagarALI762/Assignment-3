@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>My-Portfolio-With-Tailwindcss</title>
+</head>
+<body class="bg-[#222] text-white p-0 m-0 box-border">
+
+<header>
+<div class="header">
+<div class="flex gap-4 items-center">
+<a href=""><img class="logo shadow" src="./images/WhatsApp Image 2025-07-29 at 12.19.01 AM.jpeg" alt="logo-photo"></a>
+<h4 class="text-xl md:text-2xl font-bold">MD. Sagar Ali</h4>
+</div>
+<nav class="navbar md:pt-4">
+     <div class="navbar-menu md:hidden mt-5" onclick="hamburgertogler()">
+    <i class="fa-solid fa-bars" ></i>
+  </div>
+<ul id="nav-items" class="nav-items">
+    <li class="list-none"><a class="no-underline" href="#about">About</a></li>
+       <li class="list-none"><a class="no-underline" href="#skills">Skills</a></li>
+    <li class="list-none"><a class="no-underline" href="#services">Services</a></li>
+       <li class="list-none"><a class="no-underline" href="#resume">Resume</a></li>
+     <li class="list-none"><a class="no-underline" href="#portfolio">Portfolio</a></li>
+    <li class="list-none"><a class="no-underline" href="#contact">Contact</a></li>
+<li class="list-none"><a class="no-underline" href="#faq">FAQ</a></li>
+
+  </ul>
+</nav>
+</div>
+</header>
+
+<main>
+<!--hero section start-->
+<div class="hero-area pt-5 mt-5">
+<div class="hero">
+
+<!--hero left start-->
+<div class="hero-left" data-aos="fade-right">
+<h2 class="name">MD SAGAR ALI</h2>
+<h1 class="hero-title">WEB DEVELOPER</h1>
+<h4 class="text-2xl text-center md:text-start">Based in Dhaka, Bangladesh</h4>            
+<div class="hero-left-bottom ">
+<a href="#portfolio" class="btn-view">View My Works</a>
+<div class="flex gap-6 items-center">
+  <a href="#contact" class="underline font-semibold">Contact Me</a>
+    <i class="fa-solid fa-circle-arrow-down text-2xl md:text-3xl"></i>
+</div>
+</div>
+</div>
+<!--hero left end-->
+
+<!--hero right start-->
+<div class="hero-right order-1 md:order-2 flex-1 flex justify-center" data-aos="fade-left">
+<img class="'border border-5 shadow border-secondary w-72 md:w-100  ms-5 rounded-full"
+ src="./images/WhatsApp Image 2025-07-29 at 12.19.01 AM.jpeg">
+</div>
+<!--hero right end-->
+
+</div>
+<!--hero section end-->
+
+<!--about section start-->
+<div class="about-area" id="about">
+    <div class="about mt-20 md:mt-40 w-11/12 mx-auto" data-aos="fade-up">
+        <div class="section-head">
+            <h5 class="btn">About Me</h5>
+            <h3 class="section-title">Know Me More</h3>
+        </div>
+ <div class="card mt-10">
+<h3 class="card-title">Hi, I’m MD Sagar Ali — a MERN Stack Developer.</h3>
+ <p class="card-desc"> I enjoy building fast, clean, and modern web applications using HTML, CSS, Tailwind, JavaScript, and React. I’m currently learning the full MERN stack (MongoDB, Express.js, Node.js, TypeScript) to become a complete full-stack developer.
+
+<p class="card-desc">I’ve already built several projects and love creating responsive UI, solving problems, and learning new technologies. My goal is to build real-world applications and grow as a professional developer.</p>
+</p></div>
+<div class="about-bottom">
+<div class="text-center md:text-start" data-aos="fade-right">
+    <h4 class="text-xl pb-1 ">Name:</h4>
+<h5 class="text-2xl font-bold">MD SAGAR ALI</h5>
+</div>
+<div class="text-center md:text-start" data-aos="fade-right" data-aos-delay="100">
+    <h4 class="text-xl pb-1 ">Email:</h4>
+<h5 class="text-2xl font-bold">mdsagar.webdev@gmail.com</h5>
+</div>
+<div class="text-center md:text-start" data-aos="fade-right" data-aos-delay="200">
+    <h4 class="text-xl pb-1 ">Date of Birth:</h4>
+<h5 class="text-2xl font-bold">02 March 2002</h5>
+</div>
+<div class="text-center md:text-start" data-aos="fade-right" data-aos-delay="300">
+    <h4 class="text-xl pb-1 ">From:</h4>
+<h5 class="text-2xl font-bold">Dhaka, Bangladesh</h5>
+</div>
+</div>
+   </div>
+</div>
+<!--about section end-->
+<!--skills section start-->
+<div class="skills-area" id="skills">
+    <div class="skills w-11/12 mx-auto mt-24 md:mt-40">
+        <h3 class="section-title text-center">My Skills</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-7 pt-12 md:pt-16">
+  <div data-aos="zoom-in"><div class="bg-secondary text-black text-center text-lg md:text-2xl p-2 md:p-6 rounded-full">HTML5</div></div>
+  <div data-aos="zoom-in" data-aos-delay="100"><div class="bg-secondary text-black text-center text-lg md:text-2xl p-2 md:p-6 rounded-full">CSS3</div></div>
+  <div data-aos="zoom-in" data-aos-delay="200"><div class="bg-secondary text-black text-center text-lg md:text-2xl p-2 md:p-6 rounded-full">Tailwind CSS</div></div>
+  <div data-aos="zoom-in" data-aos-delay="300"><div class="bg-secondary text-black text-center text-lg md:text-2xl p-2 md:p-6 rounded-full">Bootstrap</div></div>
+  <div data-aos="zoom-in" data-aos-delay="400"><div class="bg-secondary text-black text-center text-lg md:text-2xl p-2 md:p-6 rounded-full">Javascript</div></div>
+  <div data-aos="zoom-in" data-aos-delay="500"><div class="bg-secondary text-black text-center text-lg md:text-2xl p-2 md:p-6 rounded-full">React Js</div></div>
+</div>
+ </div>
+</div>
+<!--service section start-->
+<div class="service-area" id="services">
+    <div class="service mt-20 md:mt-40 w-11/12 mx-auto">
+      <div class="section-head">
+          <button class="btn ">My Services</button>
+        <h3 class="section-title text-center">How I can help your next project
+        </h3>
+      </div>
+      <div class="services-cards">
+        <!--card-1-->
+<div class="card flex-1 text-center" data-aos="zoom-in">
+    <h3 class="card-title">UI/UX Implementation</h3>
+    <p class="card-desc">Pixel-perfect UI development from any design (Figma/PSD).
+Ensures mobile-friendly layouts with clean and consistent styling.
+    </p>
+</div>
+        <!--card-2-->
+<div class="card flex-1 text-center" data-aos="zoom-in" data-aos-delay="100">
+    <h3 class="card-title">Frontend development </h3>
+    <p class="card-desc">Modern, responsive, and clean websites built with HTML, CSS, Tailwind, and React.
+Focused on performance, accessibility, and smooth user experience. </p>
+</div>
+        <!--card-3-->
+<div class="card flex-1 text-center" data-aos="zoom-in" data-aos-delay="200">
+    <h3 class="card-title">Backend development</h3>
+    <p class="card-desc">Building secure and scalable backend APIs using Node.js & Express.js.
+Includes authentication, routing, database operations, and API performance optimization.  </p>
+</div>
+      </div>
+    </div>
+</div>
+<!--service section end-->
+<!--resume section start-->
+<div class="resume-area" id="resume" data-aos="fade-up">
+    <div class="resume w-11/12 mx-auto mt-26 md:mt-40">
+        <div class="section-head">
+            <h5 class="btn">Resume</h5>
+            <h3 class="section-title text-center">A summary of My Resume</h3>
+        </div>
+        <div>
+            <div class="md:flex gap-60 mt-16 md:mt-26">
+                <!--Left Column – Education-->
+                <div class="flex flex-col flex-1" data-aos="fade-right">
+                    <h1 class="education">My Education</h1>
+                    <div>
+                        <h4 class="education-title">Bachelor's Degree</h4>
+                        <h5 class="py-2 text-lg">Hemnagar Degree College / 2021 - Running</h5>
+                        <h5 class="text-lg">Hemnagar, Gopalpur, Tangail</h5>
+                        <div class="py-6"><hr class="border-gray-300" /></div>
+                    </div>
+                    <div>
+                        <h4 class="education-title">HSC Passed</h4>
+                        <h5 class="py-2 text-lg">Gopalpur Govt College / 2018 - 2020</h5>
+                        <h5 class="text-lg">Gopalpur, Tangail</h5>
+                        <div class="py-6"><hr class="border-gray-300" /></div>
+                    </div>
+                    <div>
+                        <h4 class="education-title">SSC Passed</h4>
+                        <h5 class="py-2 text-lg">Suti V.M Pilot Model Govt High School / 2016 - 2018</h5>
+                        <h5 class="text-lg">Gopalpur, Tangail</h5>
+                    </div>
+                </div>
+                <!-- Right Column – Experience -->
+                <div class="resume-right-side" data-aos="fade-left">
+                    <div>
+                        <h1 class="experience">My Experience</h1>
+                      <div>
+                         <h4 class="experience-title">
+                        MERN Stack Development (Training & Projects) :
+                        </h4>
+                            <p class="text-xl md:text-2xl pt-3">Currently learning full MERN Stack development, focusing on JavaScript, React, Node.js, Express, and MongoDB.
+Built multiple small projects using React and JavaScript, gaining hands-on experience in UI building, API integration, and responsive design.
+</p>
+                      </div> 
+                        <div class="pt-8">
+                         <h4 class="experience-title">
+                        Frontend Development Practice :</h4>
+                            <p class="text-xl md:text-2xl pt-3">Developed several personal projects using HTML, CSS, Tailwind, and React.
+Experienced in creating clean UI components, optimizing layouts, and building responsive web pages.
+</p>
+                      </div> 
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--resume section end-->
+
+
+<!--skills section end-->
+
+<!--portfolio section start-->
+<div class="portfolio-area" id="portfolio">
+    <div class="portfolio">
+        <div class="section-head">
+            <h5 class="btn">Portfolio</h5>
+            <h3 class="section-title px-8 md:px-0">Some of my most recent projects</h3>
+        </div>
+        <div class="portfolio-cards">
+<!--card 1-->
+<div class="col-span-1 card bg-secondary" data-aos="flip-up">
+<h3 class="card-title">Modern & Responsive React Web Page</h3>
+<p class="card-desc">A fully responsive web page built using React.js and Tailwind CSS, optimized for all devices.</p>
+<div class="flex justify-between mt-6">
+    <a class="btn-live" href="https://jovial-druid-dabeec.netlify.app/" target="_blank">Live</a>
+    <a class="btn-github" href="https://github.com/MDSagarALI762/React-Ascendance" target="_blank">GitHub</a>
+</div>
+</div>
+<!--card 2-->
+<div class="col-span-1 card bg-secondary" data-aos="flip-up" data-aos-delay="100">
+<h3 class="card-title">Modern & Responsive Row CSS Web Page</h3>
+<p class="card-desc">A fully responsive web page built using row css CSS, optimized for all devices.</p>
+<div class="flex justify-between mt-6">
+    <a class="btn-live" href="https://interactivecares-assignment-2.netlify.app/" target="_blank">Live</a>
+    <a class="btn-github" href="https://github.com/MDSagarALI762/Assignment-2.git" target="_blank">GitHub</a>
+</div>
+</div>
+<!--card 3-->
+<div class="col-span-1 card bg-secondary" data-aos="flip-up" data-aos-delay="200">
+<h3 class="card-title">Modern E-commerce Landing Page</h3>
+<p class="card-desc">Converted a Figma design into e-commerce landing page using React.js and Tailwind CSS.</p>
+<div class="flex justify-between mt-6">
+    <a class="btn-live" href="https://profound-dragon-23dae2.netlify.app/" target="_blank">Live</a>
+    <a class="btn-github" href="https://github.com/MDSagarALI762/Gluson-ecommrerce-website" target="_blank">GitHub</a>
+</div>
+</div>
+<!--card 4-->
+<div class="col-span-1 card bg-secondary" data-aos="flip-up" data-aos-delay="300">
+<h3 class="card-title">Modern React Landing Page</h3>
+<p class="card-desc">Figma to Code conversion using React and Tailwind CSS, optimized for all devices.</p>
+<div class="flex justify-between mt-6">
+    <a class="btn-live" href="https://relaxed-madeleine-fc2a05.netlify.app/" target="_blank">Live</a>
+    <a class="btn-github" href="https://github.com/MDSagarALI762/React-Hockey" target="_blank">GitHub</a>
+</div>
+</div>
+        </div>
+    </div>
+</div>
+<!--portfolio section end-->
+<!--hire section start-->
+<div class="hire-area" id="hire" data-aos="fade-up">
+    <section class="hire">
+        <div>
+            <h1 class="hire-title">Interested in working with me?</h1>
+            <a href="#contact" class="hire-btn">Hire Me</a>
+        </div>
+    </section>
+</div>
+<!--hire section end-->
+<!-- FAQ SECTION -->
+<div class="faq-area" data-aos="fade-up" id="faq">
+  <section class="faq">  
+      <!-- FAQ Items -->
+      <div class="pt-5 mt-3 space-y-4 flex-1 order-2 md:order-1">
+        
+        <div class="md:mb-12 flex flex-col gap-1 items-center">
+          <button class="btn" data-aos="fade-down">FAQ</button>
+          <h3 class="section-title" data-aos="fade-down" data-aos-delay="100">Have any questions?</h3>
+        </div>
+
+        <!-- Item 1 -->
+        <div class="border rounded-lg overflow-hidden" data-aos="fade-right">
+          <input type="checkbox" id="acc1" class="peer hidden" />
+          <label for="acc1" class="flex justify-between items-center p-4 cursor-pointer">
+            <h4 class="font-semibold text-xl md:text-2xl">What is Developer?</h4>
+            <span class="transition-transform peer-checked:rotate-180">⌄</span>
+          </label>
+          <div class="max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-40 p-0 peer-checked:p-4">
+            <p class="text-lg md:text-xl">
+              A developer is someone who builds and maintains websites or applications using programming languages and tools.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="border rounded-lg overflow-hidden" data-aos="fade-right" data-aos-delay="400">
+          <input type="checkbox" id="acc2" class="peer hidden" />
+          <label for="acc2" class="flex justify-between items-center p-4 cursor-pointer">
+            <h4 class="font-semibold text-xl md:text-2xl">How Can I Help You?</h4>
+            <span class="transition-transform peer-checked:rotate-180">⌄</span>
+          </label>
+          <div class="max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-40 p-0 peer-checked:p-4">
+            <p class="text-lg md:text-xl">
+              I can build modern, responsive websites tailored to your needs using HTML, CSS, JavaScript, and React.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="border rounded-lg overflow-hidden" data-aos="fade-right" data-aos-delay="500">
+          <input type="checkbox" id="acc3" class="peer hidden" />
+          <label for="acc3" class="flex justify-between items-center p-4 cursor-pointer">
+            <h4 class="font-semibold text-xl md:text-2xl">Simple Process of Workflow?</h4>
+            <span class="transition-transform peer-checked:rotate-180">⌄</span>
+          </label>
+          <div class="max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-40 p-0 peer-checked:p-4">
+            <p class="text-lg md:text-xl">
+              My workflow includes understanding client needs, designing UI, writing clean code, testing, and deployment.
+            </p>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="border rounded-lg overflow-hidden" data-aos="fade-right" data-aos-delay="800">
+          <input type="checkbox" id="acc4" class="peer hidden" />
+          <label for="acc4" class="flex justify-between items-center p-4 cursor-pointer">
+            <h4 class="font-semibold text-xl md:text-2xl">Why Responsive Website Design?</h4>
+            <span class="transition-transform peer-checked:rotate-180">⌄</span>
+          </label>
+          <div class="max-h-0 overflow-hidden transition-all duration-300 peer-checked:max-h-40 p-0 peer-checked:p-4">
+            <p class="text-lg md:text-xl">
+              Responsive design ensures your website looks great on all devices, improving user experience and engagement.
+            </p>
+          </div>
+        </div>
+      </div>
+  <!-- FAQ Image -->
+      <div class="flex-1 md:order-2" data-aos="fade-left">
+        <img src="./images/faq.png" alt="FAQ Illustration" class="w-full md:w-auto mx-auto">
+      </div>
+  </section>
+</div>
+<!--faq section end-->
+<!-- CONTACT SECTION Start-->
+<div class="contact-area" data-aos="fade-up" id="contact">
+  <section class="contact ">
+    <div class="flex mb-5 md:mb-0 justify-center items-center">
+      <h5 class="btn" data-aos="fade-down">Contact Me</h5>
+    </div>
+      <div class="contact-details">    
+        <!-- Left Column -->
+        <div class="flex-1" data-aos="fade-right">
+          <h1 class="contact-left-title">
+            Let's get in touch
+          </h1>
+          <p class="contact-left-desc">
+            I enjoy discussing new projects and design challenges. Please share as much info as possible so we can get the most out of our first catch-up.
+          </p>
+          <div class="text-center md:text-left">
+            <h2 class="font-bold text-2xl">Living In:</h2>
+            <p class="text-xl md:text-2xl">
+              Gopalpur, Tangail, Dhaka, Bangladesh
+            </p>
+    <h2 class="font-bold text-2xl pt-4 md:pt-0">Call:</h2>
+            <p class="text-xl md:text-2xl">(+880) 1763131473</p>
+          </div>
+          <!-- Social Icons -->
+          <div class="contact-icon">
+            <a href="#" class="hover:text-blue-500"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-blue-700"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-blue-600"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="hover:text-yellow-400"><i class="fab fa-snapchat-ghost"></i></a>
+          </div>
+        </div>
+        <!-- Right Column - Form -->
+        <div class="flex-1" data-aos="fade-left">
+          <h2 class="contact-right-title">
+            Estimate your Project?
+          </h2>
+
+          <form class="py-6 md:py-10">
+            <div class="mb-5">
+              <label class="text-xl font-semibold">What is Your Name:</label>
+              <input class="input"
+                name="name"
+                type="text"
+                required
+              />
+            </div>
+            <div class="mb-5">
+              <label class="text-xl font-semibold">Your Email Address:</label>
+              <input class="input"
+                name="email"
+                type="email"
+                required   />
+            </div>
+            <div class="mb-5">
+              <label class="text-xl font-semibold">How can I Help you?</label>
+              <textarea class="textarea"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <div class="flex justify-center md:justify-start">
+              <button type="submit">
+                <span>Send</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+  </section>
+</div>
+<!--contact section end-->
+
+<!--footer section start-->
+<footer class="footer-area bg-black">
+  <section class="w-11/12 mx-auto" data-aos="fade-up">
+   <div class="footer">
+    <div class="mt-10 md:mt-0">
+      <p class="text-white text-lg font-semibold">
+        Copyright © 2021
+        <span class="text-[#EBD92C] underline">
+          Callum
+        </span>.
+        All Rights Reserved.
+      </p>
+    </div>
+    <div class="pt-4 md:pt-7 pb-10 md:pb-0">
+      <p class="text-white text-lg font-semibold">
+        Designed by
+        <span class="text-[#EBD92C] underline pl-2">
+          Harnish Design
+        </span>
+      </p>
+    </div>
+</div>
+  </section>
+</footer>
+<!--footer section end-->
+</main>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
